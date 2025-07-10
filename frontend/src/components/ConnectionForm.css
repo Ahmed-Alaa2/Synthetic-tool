@@ -1,0 +1,87 @@
+:root {
+  --navy: #001f3f;
+  --navy-light: #003366;
+  --white: #ffffff;
+  --input-bg: #ffffff;
+  --border-radius: 4px;
+  --error-red: #e74c3c;
+}
+
+.connection-card {
+  background: #8fb7cc;
+  color: var(--white);                   /* ensure all text defaults to white */
+  max-width: 360px;
+  margin: 60px auto;
+  border-radius: var(--border-radius);
+  box-shadow: 0 12px 24px rgba(119, 160, 255, 0.12);
+  padding: 24px;
+}
+
+.connection-form .form-title {
+  margin: 0 0 20px;
+  text-align: center;
+  color: var(--white);
+}
+
+.input-group {
+  transition: opacity 0.3s ease-out;
+}
+
+.input-group:hover {
+  opacity: 0.7;
+}
+
+
+
+.input-group label {
+  display: block;
+  font-weight: 600;
+  color: var(--white);                   /* labels now white on navy */
+  margin-bottom: 6px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  background-color: var(--input-bg);
+  color: var(--navy);                    /* input text remains dark */
+  transition: border-color 0.2s ease;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: var(--white);
+}
+
+.input-group input.invalid {
+  border-color: var(--error-red);
+}
+
+.error-message {
+  color: var(--error-red);
+  font-size: 0.875rem;
+  margin-top: 4px;
+}
+
+.connect-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #012b55;
+  color: #ffffff ;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.connect-btn:hover {
+  background-color: #00509e;
+}
+
+.connect-btn:active {
+  transform: scale(0.98);
+}

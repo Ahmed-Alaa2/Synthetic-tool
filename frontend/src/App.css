@@ -1,0 +1,149 @@
+:root {
+  --navy: #001f3f;
+  --navy-light: #003366;
+  --white: #ffffff;
+  --gray-bg: #f5f7fa;
+  --input-bg: #ffffff;
+  --border-radius: 4px;
+  --error-red: #e74c3c;
+}
+
+/* Reset & body */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--navy);
+  color: var(--white);
+}
+
+/* Header */
+.app-header {
+  background-color: var(--navy-light);
+  padding: 16px 24px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+.app-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+/* Main container */
+.app-container {
+  max-width: 960px;
+  margin: 32px auto;
+  padding: 24px;
+  background-color: var(--navy-light);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Headings inside forms/selectors */
+h3 {
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+/* Common wrapper for pages */
+.selector,
+.form-group,
+.classifier {
+  margin-bottom: 24px;
+}
+
+/* Labels & Inputs */
+label {
+  display: block;
+  font-weight: bold;
+  color: var(--white);
+  margin-bottom: 6px;
+}
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--white);
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  margin-bottom: 12px;
+  transition: border-color 0.2s ease;
+}
+input:focus,
+select:focus {
+  outline: none;
+  border-color: var(--navy);
+}
+input.invalid {
+  border-color: var(--error-red);
+}
+.error-message {
+  color: var(--error-red);
+  font-size: 0.875rem;
+  margin-top: -8px;
+  margin-bottom: 16px;
+}
+
+/* Buttons */
+button {
+  display: inline-block;
+  background-color: var(--navy);
+  color: var(--white);
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: background-color 0.2s, transform 0.1s;
+}
+button:hover {
+  background-color: var(--navy-light);
+}
+button:active {
+  transform: scale(0.98);
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+th {
+  background-color: var(--navy);
+  color: var(--white);
+  padding: 12px;
+  text-align: left;
+}
+td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+tr:last-child td {
+  border-bottom: none;
+}
+
+/* Center fake table */
+.table-container {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+}
+.selector table {
+  margin: 0 auto;
+}
+
+
+/* If you had a dedicated ConnectionForm.css, ensure backgrounds inherit the theme: */
+.connection-card {
+  background: var(--navy-light);
+  color: var(--white);
+}

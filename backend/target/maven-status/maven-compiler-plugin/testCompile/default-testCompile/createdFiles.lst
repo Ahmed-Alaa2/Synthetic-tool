@@ -1,0 +1,4 @@
+com\example\bankfake\controller\ConnectionControllerTest.class
+com\example\bankfake\controller\TableControllerTest.class
+com\example\bankfake\controller\ClassificationControllerTest.class
+com\example\bankfake\controller\FakeDataControllerTest.class

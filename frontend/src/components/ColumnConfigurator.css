@@ -1,0 +1,46 @@
+.column-configurator .table-wrap {
+  overflow-x: auto;
+  margin-top: 16px;
+}
+
+.column-configurator table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.column-configurator th,
+.column-configurator td {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.column-configurator select {
+  min-width: 150px;
+}
+
+.custom-params {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px,1fr));
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.custom-params label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9em;
+}
+
+.custom-params input {
+  margin-top: 4px;
+  padding: 4px;
+}
+
+.no-custom {
+  color: #888;
+  font-style: italic;
+}
+
+.generate-btn {
+  margin-top: 16px;
+  padding: 10px 20px;}
